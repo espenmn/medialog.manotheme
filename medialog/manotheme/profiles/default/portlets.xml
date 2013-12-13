@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<portlets>
+   <portletmanager
+        name="manotheme.topportlets"
+        type="medialog.manotheme.browser.interfaces.IManothemeTopContent"
+        />
+  <portletmanager
+    name="manotheme.footerportlets"
+    type="medialog.manotheme.browser.interfaces.IManothemeFooterContent"
+    >
+  
+ <assignment name="kontaktinfo" category="context" key="/"
+    manager="manotheme_footerportlets" type="plone.portlet.static.Static"
+    visible="True">
+  <property
+     name="text">&lt;p&gt;&lt;a class="internal-link" href="kart"&gt;Neptunveien 6&lt;/a&gt;&lt;/p&gt;
+   &lt;p style="padding-left: 0px; "&gt;7652 Verdal&lt;/p&gt;
+   &lt;p style="padding-left: 0px; "&gt;Telefon: 48 31 96 00&lt;br style="padding-left: 0px; " /&gt;Fax: 55 55 55 55 &lt;br style="padding-left: 0px; " /&gt;&lt;a class="email-link" href="mailto:firmapost@elprosjekt-trondelag.no" target="_self" title=""&gt;firmapost at elprosjekt-trondelag.no&lt;/a&gt;&lt;/p&gt;</property>
+  <property name="more_url"/>
+  <property name="omit_border">False</property>
+  <property name="header">Kontaktinfo</property>
+  <property name="footer"/>
+ </assignment>
+ <assignment name="ansvarsrett" category="context" key="/"
+    manager="manotheme_footerportlets" type="plone.portlet.static.Static"
+    visible="True">
+  <property
+     name="text">&lt;p style="text-align: center; "&gt;&lt;a class="external-link" href="http://sgpub.dibk.no/files/Godkjenningsbevis.pdf?VT_SNFORM=Sgikt@0_947778846" target="_self" title=""&gt;&lt;img class="image-inline" src="ansvarsrett.png/@@images/image/thumb" /&gt;&lt;/a&gt;&lt;/p&gt;</property>
+  <property name="more_url"/>
+  <property name="omit_border">False</property>
+  <property name="header">Ansvarsrett</property>
+  <property name="footer"/>
+ </assignment>
+ <assignment name="rif" category="context" key="/"
+    manager="manotheme_footerportlets" type="plone.portlet.static.Static"
+    visible="True">
+  <property
+     name="text">&lt;p style="text-align: center; "&gt;&lt;a class="external-link" href="http://www.rif.no " target="_self" title=""&gt;&lt;img class="image-inline" src="RIFlogo.png/@@images/image/thumb" /&gt;&lt;/a&gt;&lt;/p&gt;</property>
+  <property name="more_url"/>
+  <property name="omit_border">False</property>
+  <property name="header">RIF</property>
+  <property name="footer"/>
+ </assignment>
+ <assignment name="navigation" category="context" key="/"
+    manager="plone.leftcolumn" type="portlets.Navigation" visible="True">
+  <property name="topLevel">1</property>
+  <property name="currentFolderOnly">False</property>
+  <property name="name"/>
+  <property name="includeTop">True</property>
+  <property name="bottomLevel">0</property>
+  <property name="root"/>
+ </assignment>
+ </portletmanager>
+</portlets>

@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="medialog.manotheme">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Manotheme"
+      directory="profiles/default"
+      description='Installs "Medialog Manotheme".'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="medialog.manotheme.vanoous"
+      title="Manotheme Theme: miscellaneous import steps"
+      description="Vanoous import steps that are not handled by GS import/export handlers."
+      handler="medialog.manotheme.setuphandlers.setupVanoous">
+    <depends name="skins"/>
+  </genericsetup:importStep>
+
+</configure>
